@@ -1,0 +1,25 @@
+/* Colors */
+$canvas: #f7efe7;
+$white: #fff;
+$blackOpaque: #000000cc;
+$black: #000;
+$green: #003941;
+
+/* Structuring */
+$paddingMain: 2%;
+$menuHeight: 80px;
+
+/* Templates */
+@mixin buttonStyle($width) {
+    width: $width;
+    height: 50px;
+    background-color: $black;
+    border: none;
+    border-radius: 2px;
+    color: $white;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}

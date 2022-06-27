@@ -1,14 +1,16 @@
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
-const NavBarInLayout = (props) => {
+const Layout = (props) => {
     return (
         <>
             <NavBar />
             <main>
                 {props.children}
             </main>
+            <Footer />
         </>
     );
 };
 
-export default NavBarInLayout;
+export default Layout;

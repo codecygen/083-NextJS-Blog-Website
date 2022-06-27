@@ -1,11 +1,11 @@
-import NavBarInLayout from '../components/navbar/NavBarInLayout';
-import '../styles/globals.css';
+import Layout from '../components/navbar/Layout';
+import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <NavBarInLayout>
+    <Layout>
       <Component {...pageProps} />
-    </NavBarInLayout>
+    </Layout>
   );
 };
 
