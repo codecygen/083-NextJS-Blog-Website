@@ -2,6 +2,8 @@ import GetAllBlogs from '../components/blogs/GetAllBlogs';
 import { MongoClient } from 'mongodb';
 
 const HomePage = (props) => {
+  console.log(props.posts);
+  
   return (
     <>
       <h1>Home Page</h1>
@@ -20,11 +22,15 @@ export const getStaticProps = async () => {
   const fetchedPosts = await postsCollection.find().toArray();
   connection.close();
 
-  console.log(fetchedPosts);
-
   return {
       props: {
-        posts: 'aras' 
+        posts: fetchedPosts.map(fetchedPost => ({
+          id: fetchedPost._id.toString(),
+          picture: fetchedPost.picture,
+          content: fetchedPost.content,
+          description: fetchedPost.description,
+          title: fetchedPost.title
+        }))
       }
   };
 };
