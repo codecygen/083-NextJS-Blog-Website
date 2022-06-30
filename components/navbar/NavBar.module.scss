@@ -2,5 +2,7 @@
 
 .navbar {
     background-color: $navbarColor;
-    padding: $paddingHorizontal 20px;
+    padding: 10px $paddingHorizontal;
+    @include flexAlign;
+    justify-content: space-between;
 }

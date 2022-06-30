@@ -11,11 +11,17 @@ $paddingHorizontal: 2%;
 $paddingMain: 2%;
 $menuHeight: 80px;
 
+/* Button Colors */
+$buttonColor1: #7171bd;
+$buttonColorHOver1: #4242a0;
+$buttonColor2: #de684a;
+$buttonColorHOver2: #a04029;
+
 /* Templates */
-@mixin buttonStyle($width) {
+@mixin buttonStyle($width, $buttonColor, $buttonColorHover) {
     width: $width;
     height: 50px;
-    background-color: $black;
+    background-color: $buttonColor;
     border: none;
     border-radius: 2px;
     color: $white;
@@ -24,4 +30,16 @@ $menuHeight: 80px;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
+    border-radius: 10px;
+    transition: background-color 0.25s ease-in-out;
+
+    &:hover {
+        background-color: $buttonColorHover;
+    }
+}
+
+@mixin flexAlign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
