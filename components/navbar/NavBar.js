@@ -1,6 +1,8 @@
+import classes from './NavBar.module.scss';
+
 const NavBar = () => {
   return (
-    <div>NavBar</div>
+    <div className={classes.navbar}>NavBar</div>
   );
 };
 

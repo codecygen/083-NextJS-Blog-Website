@@ -1,6 +1,4 @@
-import fetchLink from '../../data/dummy-database.json';
-
-const GetAllBlogs = (props) => {
+const GetAllBlogs = () => {
   return (
     <div>aras</div>
   );
