@@ -1,5 +1,9 @@
 @import '../../styles/Variables.scss';
 
-.button {
+.button1 {
     @include buttonStyle(140px, $buttonColor1, $buttonColorHOver1);
+}
+
+.button2 {
+    @include buttonStyle(140px, $buttonColor2, $buttonColorHOver2);
 }
