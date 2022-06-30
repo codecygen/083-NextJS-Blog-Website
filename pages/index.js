@@ -2,7 +2,7 @@ import GetAllBlogs from '../components/blogs/GetAllBlogs';
 import { MongoClient } from 'mongodb';
 
 const HomePage = (props) => {
-  console.log(props.posts);
+  // console.log(props.posts);
   
   return (
     <>
