@@ -8,11 +8,11 @@ const NavBar = () => {
     <nav className={classes.navbar}>
       <h1>Blog Website</h1>
       <div>
-        <Button link="/">
+        <Button buttonStyle="1" link="/">
           All Posts
         </Button>
 
-        <Button link="/new-post">
+        <Button buttonStyle="1" link="/new-post">
           Write Post
         </Button>
       </div>
