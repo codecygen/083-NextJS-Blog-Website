@@ -41,8 +41,14 @@ $buttonColorHOver2: #a04029;
     }
 }
 
-@mixin flexAlign {
+@mixin flexAlignHorizontal {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+@mixin flexAlignVertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

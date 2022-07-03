@@ -1,0 +1,13 @@
+// CSS-Always-Keep-Footer-At-Bottom
+@import '../../styles//Variables.scss';
+
+.overall {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.main {
+    margin: calc($navHeight + 100px) 0 100px;
+}
