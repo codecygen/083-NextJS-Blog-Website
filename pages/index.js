@@ -1,13 +1,11 @@
-import GetAllBlogs from '../components/blogs/GetAllBlogs';
+import AllBlogs from '../components/blogs/AllBlogs';
 import { MongoClient } from 'mongodb';
 
 const HomePage = (props) => {
-  // console.log(props.posts);
   
   return (
     <>
-      <h1>Home Page</h1>
-      <GetAllBlogs />
+      <AllBlogs blogList={props.posts} />
     </>
   );
 };

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { TbWriting } from "react-icons/tb";
 import Button from '../ui/Button';
 
 import classes from './NavBar.module.scss';
@@ -6,7 +6,7 @@ import classes from './NavBar.module.scss';
 const NavBar = () => {
   return (
     <nav className={classes.navbar}>
-      <h1>Blog Website</h1>
+      <TbWriting size='80px' />
       <div>
         <Button buttonStyle="1" link="/">
           All Posts
