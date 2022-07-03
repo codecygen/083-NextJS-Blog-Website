@@ -1,12 +1,14 @@
 import AllBlogs from '../components/blogs/AllBlogs';
+
+import classes from './index.module.scss';
 import { MongoClient } from 'mongodb';
 
 const HomePage = (props) => {
   
   return (
-    <>
+    <section className={classes.home}>
       <AllBlogs blogList={props.posts} />
-    </>
+    </section>
   );
 };
 
