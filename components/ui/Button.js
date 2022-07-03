@@ -2,7 +2,18 @@ import Link from 'next/link';
 import classes from './Button.module.scss';
 
 const Button = (props) => {
-    const buttonStyle = props.buttonStyle === '1' ? classes.button1 : classes.button2;
+     let buttonStyle;
+
+    switch (props.buttonStyle) {
+        case '1':
+            buttonStyle = classes.button1;
+            break;
+        case '2':
+            buttonStyle = classes.button2;
+            break;
+        default:
+            buttonStyle = classes.button1;
+    }
 
     if (props.link) {
         return (

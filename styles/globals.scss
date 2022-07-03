@@ -4,9 +4,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
-  ; 
+
+  // NextJS-Change-Default-Font-To-Google-Fonts
+  font-family: 'Montserrat', sans-serif;
   background-color: $canvas;
 }
 

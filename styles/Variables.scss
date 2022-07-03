@@ -32,6 +32,8 @@ $buttonColorHOver2: #a04029;
     line-height: 50px;
     border-radius: 10px;
     transition: background-color 0.25s ease-in-out;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
 
     &:hover {
         background-color: $buttonColorHover;
