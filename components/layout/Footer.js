@@ -1,8 +1,10 @@
-import classes from './footer.module.scss';
+import classes from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className={classes.footer}>Footer</footer>
+    <footer className={classes.footer}>
+      <section>Designed & Built by Aras Sen</section>
+    </footer>
   );
 };
 
