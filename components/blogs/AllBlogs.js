@@ -1,7 +1,7 @@
 import BlogCart from './BlogCart';
 
 const AllBlogs = (props) => {
-  // console.log(props.blogList);
+  console.log(props.blogList);
 
   const allBlogs = props.blogList.map(blog => (
     <BlogCart 
