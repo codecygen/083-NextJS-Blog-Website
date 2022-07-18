@@ -1,10 +1,11 @@
+import BlogForm from "../../components/forms/BlogForm";
+import classes from "./index.module.scss";
+
 const NewPost = () => {
     return (
-        <>
-            <h1>New Post Page</h1>
-            <div>Write a new post</div>
-        </>
-
+        <section className={classes["new-post"]}>
+            <BlogForm />
+        </section>
     );
 };
 
