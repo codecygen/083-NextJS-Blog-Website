@@ -10,6 +10,10 @@ body {
   background-color: $canvas;
 }
 
+::selection {
+  background: #60ae7e;
+}
+
 a {
   color: inherit;
   text-decoration: none;

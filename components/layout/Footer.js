@@ -3,7 +3,11 @@ import classes from './Footer.module.scss';
 const Footer = () => {
   return (
     <footer className={classes.footer}>
-      <section>Designed & Built by Aras Sen</section>
+      <section>
+        <h4>
+          Designed & Built by Aras Sen
+        </h4>
+      </section>
     </footer>
   );
 };
