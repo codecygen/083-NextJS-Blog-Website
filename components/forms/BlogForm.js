@@ -2,10 +2,10 @@ import classes from './BlogForm.module.scss';
 
 const BlogForm = () => {
   return (
-    <section className={classes['form-card']} id='contact'>
+    <section className={classes['form-card']} id='blog'>
             <div>
                 <form>
-                    <h3>Contact Form</h3>
+                    <h3>Write a New Blog</h3>
                     <div className={classes['input-div']}>
                         <label htmlFor='title'>Title</label>
                         <input
