@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 import classes from './BlogForm.module.scss';
 
-const BlogForm = () => {
+const BlogForm = (props) => {
     const titleRef = useRef();
     const descriptionRef = useRef();
     const pictureRef = useRef();
@@ -20,7 +20,7 @@ const BlogForm = () => {
             content: contentRef.current.value
         };
 
-        console.log(enteredData);
+        props.onAddArticle(enteredData);
     }
 
     return (
